@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+
+/* header style */
+
+header {
+    background-image: url(img/dddddd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    overflow: auto;
+}
+
+.row {
+    justify-content: start;
+    margin: 0 !important
+
+}
+
+.row ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row ul li {
+    padding: 20px;
+}
+
+.row ul li a {
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: darkblue;
+    text-transform: capitalize;
+}
+
+.row ul li a:hover {
+    color: red;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.logo h2 {
+    color: #00adff;
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.logo h4 {
+    color: darkblue;
+}
+
+.logo h4 span {
+    color: red;
+}
+
+.logo img {
+    height: 200px;
+    border-radius: 60%;
+    box-shadow: 2px 2px 5px red;
+
+}
+
+#cvbtn {
+    background-color: transparent;
+    box-shadow: 2px 2px 3px blue;
+    border-radius: 8px;
+    border: 1px solid red;
+    padding: 5px 15px;
+}
+
+#cvbtn a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+#cvbtn:hover {
+    background-color: transparent;
+    box-shadow: 2px 2px 3px red;
+}
+
+/* about section style */
+
+.main {
+    background-color: white;
+}
+
+.about {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 30px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: darkblue;
+}
+
+.about img {
+    border-radius: 5%;
+}
+
+.about p {
+    font-size: 1rem;
+    color: darkblue;
+}
+
+.icon {
+    line-height: 30px;
+    color: black;
+}
+
+#aboutbtn {
+    background-color: darkblue;
+    padding: 2px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+}
+
+#aboutbtn:hover {
+    background-color: transparent;
+    color: darkblue;
+}
+
+/* service section */
+.skill {
+    background-color: darkblue;
+    margin-top: 30px;
+}
+
+.skill h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.skill h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+/* contact section */
+
+.contact {
+    background-color: darkblue;
+}
+
+.contactmenu {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.contact h2 {
+    color: white;
+}
+
+form {
+    margin: 20px;
+    border: 1px solid darkblue;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px whitesmoke;
+    padding: 30px;
+    background-color: darkblue;
+}
+
+#text {
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: -2px 3px 5px whitesmoke;
+}
+
+#send {
+    color: white;
+    background-color: darkblue;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 1px 2px 5px whitesmoke;
+    font-size: 1rem;
+}
+
+.galleryh2 {
+    text-align: center;
+    padding: 20px;
+    color: darkblue;
+    font-size: 2.5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.galleryimg {
+
+    padding: 40px;
+    box-shadow: 2px 2px 3px darkblue;
+
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 3px solid darkblue;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.service .images{
+    padding: 30px;
+    
+}
+.service img{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.imgtext{
+    color: darkblue;
+    margin-top: 10px;
+    padding: 12px;
+}
+#responsive{
+    margin-top: 50px;
+}
+hr {
+    box-shadow: 1px 1px 1px white;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: darkblue;
+    background-color: white;
+}
+
+.ficon a {
+    padding: 1px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: darkblue;
+
+}
+nav#menu, #desktop_menu{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .mobile_header{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #desktop_menu{
+        display: none;
+    }
+    .mobile_header{
+        display: block;
+        padding: 20px 0 0 20px;
+    }
+}
